@@ -16,7 +16,7 @@ class TeacherSeeder extends Seeder
         $faker = Faker::create('id_ID'); // Membuat instance Faker dengan lokal Indonesia
         for ($i = 0; $i < 10; $i++) { // Loop untuk membuat 10 data guru dummy
             \DB::table('teachers')->insert([ // Menggunakan DB facade untuk insert data
-                'nip' => $faker->unique()->randomNumber(10), // NIP unik 10 digit angka
+                'nip' => $faker->unique()->randomNumber(8), // NIP unik 10 digit angka
                 'nama' => $faker->name, // Nama acak
                 'bidang_studi' => $faker->randomElement([
                     'Matematika',

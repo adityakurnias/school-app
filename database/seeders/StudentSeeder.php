@@ -18,7 +18,7 @@ class StudentSeeder extends Seeder
                 'nis' => $faker->unique()->randomNumber(8), // NIS unik 8 digit angka
                 'nama' => $faker->name, // Nama acak
                 'tanggal_lahir' => $faker->date('Y-m-d', '2008-01-01'), // Tanggal lahir max tahun 2008
-                'gender' => $faker->randomElement(['L', 'P']), // Gender L atau P
+                'jenis_kelamin' => $faker->randomElement(['L', 'P']), // Gender L atau P
                 'alamat' => $faker->address, // Alamat acak
                 'email' => $faker->unique()->safeEmail, // Email unik
                 'created_at' => now(), // Waktu dibuat sekarang
